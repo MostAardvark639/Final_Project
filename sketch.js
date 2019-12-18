@@ -59,7 +59,7 @@ function draw() {
 	 	//image(img, x, y, [width], [height])
 	 	push()
 	 	imageMode(CENTER)
-	 	image(spidey_mask, poses[0].pose.nose.x, poses[0].pose.nose.y, (poses[0].pose.nose.x + poses[0].pose.rightEar.x) /2, height )
+	 	image(SPIDEY_MASK_PNG, poses[0].pose.nose.x, poses[0].pose.nose.y, (poses[0].pose.nose.x + poses[0].pose.rightEar.x) /2, height )
 	 	pop()
 		// print(poses[0].pose)
 
