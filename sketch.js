@@ -23,7 +23,7 @@ function setup() {
   video.size(width, height);
 
 spiderman_cave_in = loadImage('spiderman_cave_in.jpg')
- 	//background(spidey_cave)
+spidey_mask = loadImage('SPIDEY_MASK_PNG.png')
 
   // Create a new poseNet method with a single detection
   poseNet = ml5.poseNet(video, modelReady);
@@ -38,11 +38,12 @@ spiderman_cave_in = loadImage('spiderman_cave_in.jpg')
 
 function modelReady() {
   select('#status').html('Model Loaded');
+
 }
 
 function draw() {
  background(0);
- image(spiderman_cave_in, 0, 0, windowWidth, windowHeight);
+ //image(spiderman_cave_in, 0, 0, windowWidth, windowHeight);
 
   // We can call both functions to draw all keypoints and the skeletons
   drawKeypoints();
