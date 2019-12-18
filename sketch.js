@@ -98,26 +98,26 @@ function draw() {
 				// vertex((poses[0].pose.rightHip.x + poses[0].pose.leftHip.x) / 2, (poses[0].pose.rightHip.y + poses[0].pose.leftHip.y) / 2 );
 				
 				//left side
-				vertex(poses[0].pose.leftHip.x - 40, poses[0].pose.leftHip.y);
-				vertex(poses[0].pose.leftKnee.x - 40, poses[0].pose.leftKnee.y);
-				vertex(poses[0].pose.leftAnkle.x - 30, poses[0].pose.leftAnkle.y);
-				vertex(poses[0].pose.leftAnkle.x + 30, poses[0].pose.leftAnkle.y);
-				vertex(poses[0].pose.leftKnee.x + 30, poses[0].pose.leftKnee.y);
-				vertex(poses[0].pose.leftHip + 40, poses[0].pose.leftHip);
-				vertex(poses[0].pose.leftShoulder.x, poses[0].pose.leftShoulder.y + 60); 
-				vertex(poses[0].pose.leftElbow.x - 40, poses[0].pose.leftElbow.y);
-				vertex(poses[0].pose.leftWrist.x - 40, poses[0].pose.leftWrist.y - 20);
-				vertex(poses[0].pose.leftWrist.x + 40, poses[0].pose.leftWrist.y + 10);
-				vertex(poses[0].pose.leftElbow.x + 40, poses[0].pose.leftElbow.y);
-				vertex(poses[0].pose.leftShoulder.x + 30, poses[0].pose.leftShoulder.y);
-				vertex((poses[0].pose.rightShoulder.x + poses[0].pose.leftShoulder.x) / 2, (poses[0].pose.rightShoulder.y + poses[0].pose.leftShoulder.y) / 2 );
-				//head bits
-				vertex(poses[0].pose.leftEar.x, poses[0].pose.leftEar.y);
-				vertex(poses[0].pose.leftEar.x - 5, poses[0].pose.leftEar.y -40);
-				vertex(poses[0].pose.leftEar.x - 10, poses[0].pose.leftEar.y -60);
-				vertex(poses[0].pose.leftEar.x - 15, poses[0].pose.leftEar.y -70);
-				vertex(poses[0].pose.leftEar.x - 17, poses[0].pose.leftEar.y -90);
-				vertex(poses[0].pose.leftEar.x - 25, poses[0].pose.leftEar.y -100);
+				// vertex(poses[0].pose.leftHip.x - 40, poses[0].pose.leftHip.y);
+				// vertex(poses[0].pose.leftKnee.x - 40, poses[0].pose.leftKnee.y);
+				// vertex(poses[0].pose.leftAnkle.x - 30, poses[0].pose.leftAnkle.y);
+				// vertex(poses[0].pose.leftAnkle.x + 30, poses[0].pose.leftAnkle.y);
+				// vertex(poses[0].pose.leftKnee.x + 30, poses[0].pose.leftKnee.y);
+				// vertex(poses[0].pose.leftHip + 40, poses[0].pose.leftHip);
+				// vertex(poses[0].pose.leftShoulder.x, poses[0].pose.leftShoulder.y + 60); 
+				// vertex(poses[0].pose.leftElbow.x - 40, poses[0].pose.leftElbow.y);
+				// vertex(poses[0].pose.leftWrist.x - 40, poses[0].pose.leftWrist.y - 20);
+				// vertex(poses[0].pose.leftWrist.x + 40, poses[0].pose.leftWrist.y + 10);
+				// vertex(poses[0].pose.leftElbow.x + 40, poses[0].pose.leftElbow.y);
+				// vertex(poses[0].pose.leftShoulder.x + 30, poses[0].pose.leftShoulder.y);
+				// vertex((poses[0].pose.rightShoulder.x + poses[0].pose.leftShoulder.x) / 2, (poses[0].pose.rightShoulder.y + poses[0].pose.leftShoulder.y) / 2 );
+				// //head bits
+				// vertex(poses[0].pose.leftEar.x, poses[0].pose.leftEar.y);
+				// vertex(poses[0].pose.leftEar.x - 5, poses[0].pose.leftEar.y -40);
+				// vertex(poses[0].pose.leftEar.x - 10, poses[0].pose.leftEar.y -60);
+				// vertex(poses[0].pose.leftEar.x - 15, poses[0].pose.leftEar.y -70);
+				// vertex(poses[0].pose.leftEar.x - 17, poses[0].pose.leftEar.y -90);
+				// vertex(poses[0].pose.leftEar.x - 25, poses[0].pose.leftEar.y -100);
 				// vertex(poses[0].pose.nose.x + 20, poses[0].pose.nose.y -110);
 				//vertex(poses[0].pose.nose.x, poses[0].pose.nose.y - 150);
 				vertex((poses[0].pose.leftEar.x + poses[0].pose.nose.x) / 2, ((poses[0].pose.nose.y + poses[0].pose.nose.y) / 2) - 250);
