@@ -65,7 +65,7 @@ function draw() {
 
 				beginShape();
 				push()
-				noFill()
+				fill(255,0,0)
 			
 				// top of head
 				vertex(poses[0].pose.nose.x, poses[0].pose.nose.y - 260);
