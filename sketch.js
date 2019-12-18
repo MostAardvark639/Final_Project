@@ -153,7 +153,8 @@ function draw() {
 				pop()
 
 				push()
-				image(brother_jay, poses[0].pose.rightKnee.x, poses[0].pose.nose.y, windowWidth/3 , windowHeight/3)
+				imageMode(CENTER)
+				image(brother_jay, poses[0].pose.rightKnee.x, poses[0].pose.nose.y *1.5 , windowWidth/3 , windowHeight/3)
 
 				pop()
 
