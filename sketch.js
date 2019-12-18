@@ -14,7 +14,10 @@ head = loadImage('FACEBOOK_PNG.png')
 spiderman_cave_in = loadImage('spiderman_cave_in.jpg')
 SPIDEY_MASK_PNG = loadImage('SPIDEY_MASK_PNG.png')
 brother_jay = loadImage('brother_jay.png')
-
+father = loadImage('father.png')
+mother = loadImage('mother.png')
+sister_noah = loadImage('sister_noah.png')
+mask = loadImage('mask.png')
 
 }
 
@@ -27,6 +30,12 @@ function setup() {
 spiderman_cave_in = loadImage('spiderman_cave_in.jpg')
 SPIDEY_MASK_PNG = loadImage('SPIDEY_MASK_PNG.png')
 brother_jay = loadImage('brother_jay.png')
+father = loadImage('father.png')
+mother = loadImage('mother.png')
+sister_noah = loadImage('sister_noah.png')
+mask = loadImage('mask.png')
+
+
 
   // Create a new poseNet method with a single detection
   poseNet = ml5.poseNet(video, modelReady);
@@ -76,14 +85,7 @@ function draw() {
 
 
 				vertex(poses[0].pose.rightEar.x, poses[0].pose.rightEar.y);
-				// vertex(poses[0].pose.rightEar.x - 17, poses[0].pose.rightEar.y -90);
-				// vertex(poses[0].pose.rightEar.x - 15, poses[0].pose.rightEar.y -70);
-				// vertex(poses[0].pose.rightEar.x - 10, poses[0].pose.rightEar.y -60);
-				// vertex(poses[0].pose.rightEar.x - 5, poses[0].pose.rightEar.y -40);
-				//vertex(poses[0].pose.nose.x + 20, poses[0].pose.nose.y -110);
-
-				//vertex(poses[0].pose.nose.x, poses[0].pose.nose.y - 150)
-				// vertex(poses[0].pose.rightEar.x, poses[0].pose.rightEar.y)
+				vertex((poses[0].pose.rightEar.x + poses[0].pose.nose.x) / 2, (poses[0].pose.rightEar.y + poses[0].pose.rightShoulder.y) / 2)
 				//neck 
 				vertex((poses[0].pose.rightShoulder.x + poses[0].pose.leftShoulder.x) / 2, (poses[0].pose.rightShoulder.y + poses[0].pose.leftShoulder.y) / 2 );
 				vertex(poses[0].pose.rightShoulder.x - 100, poses[0].pose.rightShoulder.y);
@@ -114,6 +116,8 @@ function draw() {
 				vertex(poses[0].pose.leftElbow.x + 40, poses[0].pose.leftElbow.y);
 				vertex(poses[0].pose.leftShoulder.x + 30, poses[0].pose.leftShoulder.y);
 				vertex((poses[0].pose.rightShoulder.x + poses[0].pose.leftShoulder.x) / 2, (poses[0].pose.rightShoulder.y + poses[0].pose.leftShoulder.y) / 2 );
+				vertex((poses[0].pose.leftEar.x + poses[0].pose.nose.x) / 2, (poses[0].pose.leftEar.y + poses[0].pose.leftShoulder.y) / 2)
+
 				// //head bits
 				vertex(poses[0].pose.leftEar.x, poses[0].pose.leftEar.y);
 		
@@ -154,8 +158,10 @@ function draw() {
 
 				push()
 				imageMode(CENTER)
-				image(brother_jay, poses[0].pose.rightKnee.x, poses[0].pose.nose.y *1.5 , windowWidth/3 , windowHeight/3)
-
+				image(brother_jay, poses[0].pose.rightKnee.x, 100, windowWidth / 3, windowHeight / 3)
+				image(sister_noah, poses[0].pose.leftWrist.x, 100, windowWidth / 3, windowHeight / 3)
+				image(mother, poses[0].pose.rightWrist.x, 100, windowWidth / 3, windowHeight / 3)
+				image(father, poses[0].pose.leftKnee.x, 100, windowWidth / 3, windowHeight / 3)
 				pop()
 
 		//TORSO
