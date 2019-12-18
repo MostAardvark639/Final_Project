@@ -57,10 +57,10 @@ function draw() {
 
 
 	 	//image(img, x, y, [width], [height])
-	 	push()
-	 	imageMode(CENTER)
-	 	image(SPIDEY_MASK_PNG, poses[0].pose.nose.x, poses[0].pose.nose.y, (poses[0].pose.leftEar.x + poses[0].pose.rightEar.x) / 2, height)
-	 	pop()
+	 	// push()
+	 	// imageMode(CENTER)
+	 	//image(SPIDEY_MASK_PNG, poses[0].pose.nose.x, poses[0].pose.nose.y, (poses[0].pose.leftEar.x + poses[0].pose.rightEar.x) / 2, height)
+	 	// pop()
 		// print(poses[0].pose)
 
 				beginShape();
@@ -72,11 +72,11 @@ function draw() {
 				vertex((poses[0].pose.nose.x + poses[0].pose.rightEar.x) / 2, ((poses[0].pose.nose.y + poses[0].pose.nose.y) / 2) - 250)
 
 
-				vertex(poses[0].pose.rightEar.x - 25, poses[0].pose.rightEar.y -100);
-				vertex(poses[0].pose.rightEar.x - 17, poses[0].pose.rightEar.y -90);
-				vertex(poses[0].pose.rightEar.x - 15, poses[0].pose.rightEar.y -70);
-				vertex(poses[0].pose.rightEar.x - 10, poses[0].pose.rightEar.y -60);
-				vertex(poses[0].pose.rightEar.x - 5, poses[0].pose.rightEar.y -40);
+				// vertex(poses[0].pose.rightEar.x - 25, poses[0].pose.rightEar.y -100);
+				// vertex(poses[0].pose.rightEar.x - 17, poses[0].pose.rightEar.y -90);
+				// vertex(poses[0].pose.rightEar.x - 15, poses[0].pose.rightEar.y -70);
+				// vertex(poses[0].pose.rightEar.x - 10, poses[0].pose.rightEar.y -60);
+				// vertex(poses[0].pose.rightEar.x - 5, poses[0].pose.rightEar.y -40);
 				//vertex(poses[0].pose.nose.x + 20, poses[0].pose.nose.y -110);
 
 				//vertex(poses[0].pose.nose.x, poses[0].pose.nose.y - 150)
