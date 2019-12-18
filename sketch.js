@@ -12,7 +12,7 @@ let head
 function preLoad(){
 head = loadImage('FACEBOOK_PNG.png')
 spiderman_cave_in = loadImage('spiderman_cave_in.jpg')
-spidey_mask = loadImage('SPIDEY_MASK_PNG.png')
+SPIDEY_MASK_PNG = loadImage('SPIDEY_MASK_PNG.png')
 
 }
 
