@@ -149,10 +149,10 @@ function draw() {
 				line(poses[0].pose.leftElbow.x, poses[0].pose.leftElbow.y, poses[0].pose.leftElbow.x, 0)
 				line(poses[0].pose.rightElbow.x, poses[0].pose.rightElbow.y, poses[0].pose.rightElbow.x, 0)
 				line(poses[0].pose.leftWrist.x, poses[0].pose.leftWrist.y, poses[0].pose.leftWrist.x, 0)
-				line(poses[0].pose.leftAnkle.x, poses[0].pose.leftAnkle.y, poses[0].pose.leftAnkle.x, 0)
-				line(poses[0].pose.rightAnkle.x, poses[0].pose.rightAnkle.y, poses[0].pose.rightAnkle.x, 0)
-				line(poses[0].pose.leftKnee.x, poses[0].pose.leftKnee.y, poses[0].pose.leftKnee.x, 0)
-				line(poses[0].pose.rightKnee.x, poses[0].pose.rightKnee.y, poses[0].pose.rightKnee.x, 0)
+				// line(poses[0].pose.leftAnkle.x, poses[0].pose.leftAnkle.y, poses[0].pose.leftAnkle.x, 0)
+				// line(poses[0].pose.rightAnkle.x, poses[0].pose.rightAnkle.y, poses[0].pose.rightAnkle.x, 0)
+				//line(poses[0].pose.leftKnee.x, poses[0].pose.leftKnee.y, poses[0].pose.leftKnee.x, 0)
+				// line(poses[0].pose.rightKnee.x, poses[0].pose.rightKnee.y, poses[0].pose.rightKnee.x, 0)
 
 				pop()
 
