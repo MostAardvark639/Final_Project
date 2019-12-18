@@ -158,10 +158,10 @@ function draw() {
 
 				push()
 				imageMode(CENTER)
-				image(brother_jay, poses[0].pose.rightKnee.x, 100, windowWidth / 3, windowHeight / 3)
-				image(sister_noah, poses[0].pose.leftWrist.x, 100, windowWidth / 3, windowHeight / 3)
-				image(mother, poses[0].pose.rightWrist.x, 100, windowWidth / 3, windowHeight / 3)
-				image(father, poses[0].pose.leftKnee.x, 100, windowWidth / 3, windowHeight / 3)
+				image(brother_jay, poses[0].pose.rightKnee.x, 500, windowWidth / 3, windowHeight / 3)
+				image(sister_noah, poses[0].pose.leftWrist.x, 500, windowWidth / 3, windowHeight / 3)
+				image(mother, poses[0].pose.rightWrist.x, 500, windowWidth / 3, windowHeight / 3)
+				image(father, poses[0].pose.leftKnee.x, 500, windowWidth / 3, windowHeight / 3)
 				pop()
 
 		//TORSO
