@@ -18,7 +18,7 @@ father = loadImage('father.png')
 mother = loadImage('mother.png')
 sister_noah = loadImage('sister_noah.png')
 mask = loadImage('mask.png')
-
+FINAL_BACKGROUND = loadImage('FINAL_BACKGROUND.png')
 }
 
 
@@ -34,7 +34,7 @@ father = loadImage('father.png')
 mother = loadImage('mother.png')
 sister_noah = loadImage('sister_noah.png')
 mask = loadImage('mask.png')
-
+FINAL_BACKGROUND = loadImage('FINAL_BACKGROUND.png')
 
 
   // Create a new poseNet method with a single detection
@@ -55,7 +55,7 @@ function modelReady() {
 
 function draw() {
  background(0);
- //image(spiderman_cave_in, 0, 0, windowWidth, windowHeight);
+ image(FINAL_BACKGROUND, 0, 0, windowWidth, windowHeight);
 
   // We can call both functions to draw all keypoints and the skeletons
   drawKeypoints();
@@ -149,19 +149,17 @@ function draw() {
 				line(poses[0].pose.leftElbow.x, poses[0].pose.leftElbow.y, poses[0].pose.leftElbow.x, 0)
 				line(poses[0].pose.rightElbow.x, poses[0].pose.rightElbow.y, poses[0].pose.rightElbow.x, 0)
 				line(poses[0].pose.leftWrist.x, poses[0].pose.leftWrist.y, poses[0].pose.leftWrist.x, 0)
-				// line(poses[0].pose.leftAnkle.x, poses[0].pose.leftAnkle.y, poses[0].pose.leftAnkle.x, 0)
-				// line(poses[0].pose.rightAnkle.x, poses[0].pose.rightAnkle.y, poses[0].pose.rightAnkle.x, 0)
-				//line(poses[0].pose.leftKnee.x, poses[0].pose.leftKnee.y, poses[0].pose.leftKnee.x, 0)
-				// line(poses[0].pose.rightKnee.x, poses[0].pose.rightKnee.y, poses[0].pose.rightKnee.x, 0)
+				line(poses[0].pose.rightrWrist.x, poses[0].pose.rightWrist.y, poses[0].pose.rightWrist.x, 0)
+
 
 				pop()
 
 				push()
 				imageMode(CENTER)
-				image(brother_jay, poses[0].pose.rightShoulder.x, poses[0].pose.nose.y + 200 , windowWidth / 2, windowHeight / 2)
-				image(sister_noah, poses[0].pose.leftWrist.x, poses[0].pose.nose.y + 200, windowWidth / 2, windowHeight /2)
-				image(mother, poses[0].pose.rightWrist.x, poses[0].pose.nose.y + 200 , windowWidth / 3, windowHeight / 3)
-				image(father, poses[0].pose.leftShoulder.x, poses[0].pose.nose.y + 200 ,  windowWidth / 3, windowHeight / 3)
+				image(brother_jay, poses[0].pose.rightShoulder.x, poses[0].pose.nose.y - 200 , windowWidth / 2, windowHeight / 2)
+				image(sister_noah, poses[0].pose.leftWrist.x, poses[0].pose.nose.y - 200, windowWidth / 2, windowHeight /2)
+				image(mother, poses[0].pose.rightWrist.x, poses[0].pose.nose.y - 200 , windowWidth / 3, windowHeight / 3)
+				image(father, poses[0].pose.leftShoulder.x, poses[0].pose.nose.y - 200 ,  windowWidth / 3, windowHeight / 3)
 				pop()
 
 		//TORSO
