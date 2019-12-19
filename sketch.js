@@ -149,7 +149,8 @@ function draw() {
 				line(poses[0].pose.leftElbow.x, poses[0].pose.leftElbow.y, poses[0].pose.leftElbow.x, 0)
 				line(poses[0].pose.rightElbow.x, poses[0].pose.rightElbow.y, poses[0].pose.rightElbow.x, 0)
 				line(poses[0].pose.leftWrist.x, poses[0].pose.leftWrist.y, poses[0].pose.leftWrist.x, 0)
-				line(poses[0].pose.rightrWrist.x, poses[0].pose.rightWrist.y, poses[0].pose.rightWrist.x, 0)
+			
+				line(poses[0].pose.rightWrist.x, poses[0].pose.rightWrist.y, poses[0].pose.rightWrist.x, 0)
 
 
 				pop()
